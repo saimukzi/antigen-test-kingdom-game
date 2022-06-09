@@ -16,7 +16,7 @@ export default {
       const self=this;
       console.log(`self.singleCheck.good=${self.singleCheck.good}`);
       if(self.singleCheck.good){
-        createApp(FcGame).mount('#fc_game')
+        createApp(FcGame).mount('#atk_game')
       }
     },
     onEnd() {
@@ -38,7 +38,7 @@ export default {
 </script>
 
 <template>
-  <div v-if="singleCheck.good" id="fc_game"></div>
+  <div v-if="singleCheck.good" id="atk_game"></div>
   <div v-else>
     Multiple tab is not allowed.
   </div>
