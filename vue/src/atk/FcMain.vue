@@ -1,7 +1,7 @@
 <script setup>
 import * as smz_single_check from '../smz/smz_single_check.js'
 import { createApp } from 'vue'
-import FcGame from './FcGame.vue'
+import AtkGame from './AtkGame.vue'
 </script>
 
 <script>
@@ -16,7 +16,7 @@ export default {
       const self=this;
       console.log(`self.singleCheck.good=${self.singleCheck.good}`);
       if(self.singleCheck.good){
-        createApp(FcGame).mount('#atk_game')
+        createApp(AtkGame).mount('#atk_game')
       }
     },
     onEnd() {

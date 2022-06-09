@@ -2,9 +2,9 @@ import * as smz_common from '../smz/smz_common.js'; const common=smz_common.SmzC
 
 'use strict';
 
-export const FcGame = (function(){
+export const AtkGame = (function(){
 
-class FcGame {
+class AtkGame {
   constructor(fps){
     const self=this;
     self.FPS = fps;
@@ -74,6 +74,6 @@ class FcGame {
   };
 };
 
-return FcGame;
+return AtkGame;
 
 })();

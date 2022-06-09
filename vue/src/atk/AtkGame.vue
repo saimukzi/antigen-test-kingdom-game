@@ -11,7 +11,7 @@ export default {
     const FPS = 20;
 
     const retDict = {};
-    retDict['fcMain'] = new atk_game.FcGame(FPS);
+    retDict['fcMain'] = new atk_game.AtkGame(FPS);
     retDict['freqCtrl'] = new smz_freq_ctrl.SmzFreqCtrl(FPS,()=>{retDict['fcMain'].tick();});
     retDict['fcSave'] = new smz_save.SmzSave("fc.autosave", retDict['fcMain']);
     
