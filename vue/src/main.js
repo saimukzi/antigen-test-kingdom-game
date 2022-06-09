@@ -1,4 +1,4 @@
 import { createApp } from 'vue'
-import FcMain from './atk/FcMain.vue'
+import AtkMain from './atk/AtkMain.vue'
 
-createApp(FcMain).mount('#app')
+createApp(AtkMain).mount('#app')
